@@ -1,0 +1,31 @@
+$primaryColor: #37373F;
+$secondColor: #FC9B09;
+$linkColor: #5286EC;
+$textLightColor: #B3B3B3;
+
+
+
+// * Media
+
+$mq1: 1440;
+$mq2: 1279.98;
+$mq3: 767.98;
+$mq4: 575.98;
+
+// * Container
+
+%container {
+    padding: 0 15px; 
+    @media (min-width:$mq4+px){
+         padding: 0 35px; 
+    }
+    @media (min-width:$mq3+px){
+         padding: 0 50px; 
+    }
+    @media (min-width:$mq2+px){
+         padding: 0; 
+         width: 100%;
+         max-width: 1140px;
+         margin: 0 auto;
+    }
+}

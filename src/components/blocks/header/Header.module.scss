@@ -1,0 +1,63 @@
+@import "./../../../sass/vars";
+@import "./../../../sass/mixins";
+
+.header {
+  border: 1px solid black;
+  @media (min-width:$mq3+px){
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15); 
+  }
+  .container {
+    @extend %container;
+  }
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    @media (min-width:$mq3+px){
+         height: 100px; 
+    }
+  }
+  .wrapper {
+      display: flex;
+      align-items:center;
+    .logo {
+      margin: 0px 45px 0px 0px;
+      @media (min-width: $mq4+px) {
+        margin: 0px 36px 0px 0px;
+      }
+      @media (min-width:$mq3+px){
+           height: 23px; 
+      }
+    }
+
+    .phoneMoscow {
+      color: $linkColor;
+      @media screen and (min-width: 576px) {
+        display: none;
+      }
+    }
+    .phone {
+      display: none;
+      span,
+      .phoneLink {
+        @include text(14, 400, 17);
+      }
+      span {
+         
+        color: $textLightColor;
+      }
+      .phoneLink {
+        color: $primaryColor;
+      }
+      @media screen and (min-width: 576px) {
+        display: block;
+      }
+    }
+  }
+  .user {
+      @media (min-width:$mq2+px){
+           display: none; 
+      }
+  }
+}
