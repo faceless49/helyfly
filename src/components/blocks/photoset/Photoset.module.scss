@@ -1,0 +1,46 @@
+@import "./../../../sass/vars";
+@import "./../../../sass/mixins";
+
+.photoset {
+  .container {
+    @extend %container;
+    .inner {
+
+      @media (min-width:$mq2+px){
+        display: flex;
+      }
+      .title {
+        @include text(28, 400, 34);
+        text-align: center;
+        @media (min-width: $mq3+px) {
+          @include text(40, 500, 49);
+        }
+        @media (min-width:$mq2+px){
+           text-align: left; 
+        }
+      }
+      .image {
+        border-radius: 4px;
+        width: 100%;
+      }
+      .text {
+        @include text(14, 400, 20);
+        text-align: left;
+        @media (min-width: $mq4+px) {
+          @include text(18, 400, 26);
+        }
+      }
+      .list {
+        align-self: flex-start;
+        .listItem {
+          span {
+            @include text(14, 500, 20);
+          }
+          .icon {
+            margin: 0px 10px 0px 0px;
+          }
+        }
+      }
+    }
+  }
+}

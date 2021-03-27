@@ -1,0 +1,67 @@
+@import "./../../../sass/vars";
+@import "./../../../sass/mixins";
+
+.main {
+  background-image: url(./../../../assets/img/main/bg.jpg);
+  color: $primaryColor;
+  background-size: cover;
+  background-position: 62% center;
+  .container {
+    @extend %container;
+    .inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 655px;
+      @media (min-width: $mq3+px) {
+        height: 840px;
+      }
+      .title {
+        @include text(32, 700, 39);
+        max-width: 247px;
+        margin-top: -5px;
+        span {
+          color: $secondColor;
+        }
+        @media (min-width: $mq3+px) {
+          @include text(40, 700, 49);
+          max-width: 596px;
+        }
+        @media (min-width:$mq2+px){
+          max-width: 887px;
+          // width: 100%;
+        }
+
+      }
+      .priceBox {
+        height: 93px;
+        width: 208px;    
+        background-image: url(./../../../assets/icons/pricebox.svg);
+        background-repeat: no-repeat;
+        margin: 36px 0 14px;
+        display: flex;
+        justify-content: space-around;
+        padding: 6px 15px;
+        margin-left: -5px;
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          .priceLabel {
+            @include text(18, 400, 27);
+          }
+          .price {
+            @include text(30, 800, 45);
+          }
+        }
+        .percent {
+          border-radius: 50%;
+          filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.25))
+            drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+          max-height: 47px;
+          margin-top: 10px;
+          transform: translateX(4px);
+        }
+      }
+    }
+  }
+}
