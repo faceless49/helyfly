@@ -1,0 +1,16 @@
+@import './../../sass/mixins';
+@import './../../sass/vars';
+.ratingBlock {
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 14px 0;
+    border-top: 0.5px solid #C7C7C7;
+    border-bottom: 0.5px solid #C7C7C7;
+    @media (min-width:$mq4+px){
+         padding: 20px 0 29px 0; 
+    }
+    .ratingText {
+        @include text(18,400,26)
+    }
+}
