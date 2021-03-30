@@ -5,14 +5,17 @@ import image2 from "../../../assets/icons/2.svg";
 import image3 from "../../../assets/icons/3.svg";
 import image4 from "../../../assets/icons/4.svg";
 import { Condition } from "../../condition/Condition";
+import { RatingBlock } from "../../ratingBlock/RatingBlock";
+import { Title } from "../../title/Title";
+
+
 export const Photoset = (props) => {
   return (
     <section className={s.photoset}>
       <div className={s.container}>
         <div className={s.inner}>
-          <h2 className={s.title}>
-            Фотосессия <br />в вертолете
-          </h2>
+
+        <Title title="Фотосессия в вертолете"/>
             <p className={s.text}>
               Полет на вертолете это прекрасная возможность получить новые
               ощущения! А наш замечательный фотограф запечатлит лучшие моменты!
@@ -22,6 +25,7 @@ export const Photoset = (props) => {
             <Condition src={image3}  text={'Москва'}/>
             <Condition src={image4}  text={'Готовы ответить на любые вопросы'}/>
           <img src={image} alt="" className={s.image} />
+          <RatingBlock/>
         </div>
       </div>
     </section>

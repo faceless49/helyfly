@@ -17,8 +17,8 @@ export const SimpleRating = (props) => {
   const RatingComponent = styled(Rating)({ ...styles });
 
   return (
-      <BoxComponent component="fieldset" borderColor="transparent">
+      <BoxComponent component="fieldset">
         <RatingComponent name="read-only" value={value} readOnly/>
       </BoxComponent>
   );
-}
+};

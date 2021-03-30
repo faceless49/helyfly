@@ -4,7 +4,7 @@ import { SimpleRating } from "./simpleRating/SimpleRating";
 export const RatingBlock = (props) => {
   return (
     <div className={s.ratingBlock}>
-      <img src={cup} alt="Cup" />
+      <img src={cup} className={s.cup} alt="Cup" />
       <span className={s.ratingText}>Более 50 отзывов с оценкой</span>
       <SimpleRating/>
     </div>

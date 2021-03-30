@@ -1,17 +1,20 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import { Gallery } from './components/blocks/gallery/Gallery';
 import { Header } from './components/blocks/header/Header';
 import { Main } from './components/blocks/main/Main';
 import { Photoset } from './components/blocks/photoset/Photoset';
-import { RatingBlock } from './components/ratingBlock/RatingBlock';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <Header/>
       <Main/>
       <Photoset/>
-      <RatingBlock/>
+      <Gallery/>
     </div>
+    </BrowserRouter>
   );
 }
 
