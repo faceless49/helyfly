@@ -6,7 +6,7 @@ import { Main } from './components/blocks/main/Main';
 import { Photoset } from './components/blocks/photoset/Photoset';
 import { Hero } from './components/blocks/hero/Hero';
 import { TimeTable } from './components/blocks/timeTable/TimeTable';
-import  DatePick  from './components/datePick/DatePick';
+import  {DatePick}  from './components/datePick/DatePick';
 function App() {
   return (
     <BrowserRouter>
