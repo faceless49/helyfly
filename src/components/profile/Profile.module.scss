@@ -1,0 +1,30 @@
+@import "./../../sass/mixins";
+@import "./../../sass/vars";
+.profile {
+  padding: 30px 0px 0px 0px;
+  @media (min-width:$mq2+px){
+     padding: 0; 
+  }
+  .moreLink {
+    color: $linkColor;
+    span {
+      display: block;
+      text-align: center;
+      @include text(14,500,21)
+      margin: 0px 0px 25px 0px;
+    }
+  }
+  .proffession {
+    margin: 7px 0;
+    @include text(14, 400, 21);
+    color: $textColor;
+  }
+  .avatarWrap {
+    width: 139px;
+    height: 139px;
+    background: url(./../../assets/img/about/1.jpeg) 50% 50% no-repeat;
+    border-radius: 50%;
+    background-size: cover;
+    margin-bottom: 23px;
+  }
+}

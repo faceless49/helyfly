@@ -2,55 +2,66 @@
 @import "./../../../sass/mixins";
 
 .gallery {
-  padding: 60px 0px 30px 0px;
-  .container {
-    @extend %container;
-    .inner {
-      .content {
-        display: flex;
-        overflow: scroll;
-        @media (min-width: $mq3+px) {
-          overflow: visible;
-          flex-wrap: wrap;
-        }
-        .imgWrap {
-          @media (min-width: $mq4+px) {
-            flex: 1 1 50%;
-          }
-          @media (min-width: $mq2+px) {
-            flex: 1 1 25%;
-          }
+  padding: 60px 0px 30px 15px;
+  @media (min-width:$mq3+px){
+    border-bottom: 0.5px solid #C7C7C7;
+  }
+  .inner {
+    .content {
+      display: grid;
+      grid-template-columns: repeat(8, 277px);
+      grid-gap: 12px;
+      grid-template-rows: 185px;
+      overflow: scroll;
+      @media (min-width: $mq3+px) {
+        overflow: visible;
+        padding: 0px 100px 0px 100px;
+        grid-template-columns: repeat(2, 277px);
+        grid-template-rows: repeat(4, 185px);
+      }
+      @media (min-width:$mq2+px){
+        padding: 0 70px;
+        grid-template-columns: repeat(4, 277px);
+        grid-template-rows: repeat(2, 185px);
+          
+      }
+      .imgWrap {
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          border-radius: 4px;
         }
       }
-      .moreLink {
-        text-align: center;
-        margin: 40px 0px 0px 0px;
-        color: $linkColor;
-        @include text(17, 500, 25);
-        display: none;
-        @media (min-width: $mq3+px) {
-          display: block;
+    }
+    .moreLink {
+      text-align: center;
+      margin: 40px 0px 0px 0px;
+      color: $linkColor;
+      @include text(17, 500, 25);
+      display: none;
+      @media (min-width: $mq3+px) {
+        display: block;
+      }
+      span {
+        position: relative;
+        &:after {
+          content: "";
+          top: 40%;
+          right: -20px;
+          background-image: url(../../../assets/icons/arrow.svg);
+          width: 11px;
+          height: 6px;
+          position: absolute;
         }
-        span {
-          position: relative;
-          &:after {
-            content: "";
-            top: 40%;
-            right: -20px;
-            background-image: url(../../../assets/icons/arrow.svg);
-            width: 11px;
-            height: 6px;
-            position: absolute;
-          }
-          &:before {
-            content: "";
-            top: 40%;
-            left: -20px;
-            width: 11px;
-            height: 6px;
-            background-image: url(../../../assets/icons/arrow.svg);
-            position: absolute;
-          }
+        &:before {
+          content: "";
+          top: 40%;
+          left: -20px;
+          width: 11px;
+          height: 6px;
+          background-image: url(../../../assets/icons/arrow.svg);
+          position: absolute;
         }
       }
     }

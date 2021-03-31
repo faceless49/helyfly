@@ -9,7 +9,6 @@ import { NavLink } from "react-router-dom";
 export const Gallery = (props) => {
   return (
     <section className={s.gallery}>
-      <div className={s.container}>
         <div className={s.inner}>
           <Title title="Фотографии пакета" />
           <div className={s.content}>
@@ -21,9 +20,8 @@ export const Gallery = (props) => {
             <div className={s.imgWrap}><img src={image2} alt="" /></div>
             <div className={s.imgWrap}><img src={image3} alt="" /></div>
             <div className={s.imgWrap}><img src={image4} alt="" /></div>
-          </div>
-          <NavLink to="/1" className={s.moreLink}><span>Показать все фото</span></NavLink>
         </div>
+        <NavLink to="/1" className={s.moreLink}><span>Показать все фото</span></NavLink>
       </div>
     </section>
   );

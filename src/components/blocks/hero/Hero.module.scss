@@ -1,0 +1,53 @@
+@import "./../../../sass/vars";
+@import "./../../../sass/mixins";
+
+.hero {
+  .container {
+    @extend %container;
+    .inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      @media (min-width:$mq2+px){
+            grid-template-columns: 51% 49%;
+            padding: 37px 0 51px 0;
+      }
+      .heroAvatar {
+        grid-area: 1/1/2/2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media (min-width:$mq2+px){
+            grid-area: auto;
+            justify-content: flex-start;
+        }
+      }
+      .heroInfo {
+        @include text(16, 400, 24);
+        margin: 14px 0px 30px 0px;
+      }
+      .blockColumn {
+        &:nth-child(2) {
+          padding: 30px 0px 52px 0px;
+        }
+        .moreLink {
+          color: $linkColor;
+          @include text(16, 500, 23);
+          span {
+            position: relative;
+            &:after {
+              content: "";
+              top: 40%;
+              right: -20px;
+              background-image: url(../../../assets/icons/arrow.svg);
+              width: 11px;
+              height: 6px;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

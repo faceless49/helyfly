@@ -1,0 +1,7 @@
+@import "./../../sass/mixins";
+@import "./../../sass/vars";
+
+.name {
+  @include text(18, 500, 22);
+  color: $textColor;
+}

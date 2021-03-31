@@ -1,0 +1,7 @@
+@import "./../../sass/mixins";
+@import "./../../sass/vars";
+
+.subtitle {
+  color: $textColor;
+  @include text(18, 500, 26);
+}
