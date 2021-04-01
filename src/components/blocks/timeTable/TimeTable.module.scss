@@ -1,0 +1,61 @@
+@import "./../../../sass/vars";
+@import "./../../../sass/mixins";
+
+.time {
+    @media (min-width:$mq2+px){
+         max-width: 770px; 
+    }
+  .container {
+    @extend %container;
+
+    .inner {
+      display: grid;
+      .blockRow {
+        .blockColumn {
+          padding: 30px 20px;
+          @include text(18, 400, 26);
+          @media (min-width: $mq4+px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .spWrap {
+            display: flex;
+            flex-direction: column;
+
+            span + span {
+              margin-top: 10px;
+            }
+          }
+          .btn {
+            padding: 16px 32px;
+            color: $secondColor;
+            @include text(14, 500, 17);
+            border: 2px solid $secondColor;
+            border-radius: 3px;
+            background-color: transparent;
+            margin-top: 20px;
+          }
+          .price {
+            @include text(18, 600, 22);
+          }
+        }
+      }
+      .date {
+        padding: 20px 44px 16px 44px;
+        @include text(18, 400, 26);
+        color: $textColor;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (min-width:$mq2+px){
+             justify-content: flex-start; 
+        }
+        .datePick {
+            margin: 0px 14px 0px 0px;
+        }
+      }
+    }
+  }
+}

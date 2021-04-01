@@ -1,4 +1,3 @@
-import { Title } from "../../title/Title";
 import s from "./Gallery.module.scss";
 import image1 from "./../../../assets/img/gallery/1.jpg";
 import image2 from "./../../../assets/img/gallery/2.jpg";
@@ -10,7 +9,8 @@ export const Gallery = (props) => {
   return (
     <section className={s.gallery}>
         <div className={s.inner}>
-          <Title title="Фотографии пакета" />
+          <h2 className={s.title}>Фотографии
+пакета</h2>
           <div className={s.content}>
             <div className={s.imgWrap}><img src={image1} alt="" /></div>
             <div className={s.imgWrap}><img src={image2} alt="" /></div>

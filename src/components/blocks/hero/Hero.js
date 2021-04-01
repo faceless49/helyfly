@@ -8,8 +8,7 @@ export const Hero = (props) => {
     <section className={s.hero}>
       <div className={s.container}>
         <div className={s.inner}>
-          <div className="blockRow">
-            {" "}
+          <div className={s.blockRow}>
             <div className={s.blockColumn}>
               <Subtitle subtitle="Об организаторе:" />
               <p className={s.heroInfo}>

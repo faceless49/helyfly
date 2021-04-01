@@ -6,26 +6,23 @@ import image3 from "../../../assets/icons/3.svg";
 import image4 from "../../../assets/icons/4.svg";
 import { Condition } from "../../condition/Condition";
 import { RatingBlock } from "../../ratingBlock/RatingBlock";
-import { Title } from "../../title/Title";
-
 
 export const Photoset = (props) => {
   return (
     <section className={s.photoset}>
       <div className={s.container}>
         <div className={s.inner}>
-
-        <Title title="Фотосессия в вертолете"/>
-            <p className={s.text}>
-              Полет на вертолете это прекрасная возможность получить новые
-              ощущения! А наш замечательный фотограф запечатлит лучшие моменты!
-            </p>
-            <Condition src={image1} text={'3 часа съемки'}/>
-            <Condition src={image2}  text={'Более 50 фотографий'}/>
-            <Condition src={image3}  text={'Москва'}/>
-            <Condition src={image4}  text={'Готовы ответить на любые вопросы'}/>
+          <h2 className={s.title}>Фотосессия в вертолете</h2>
+          <p className={s.text}>
+            Полет на вертолете это прекрасная возможность получить новые
+            ощущения! А наш замечательный фотограф запечатлит лучшие моменты!
+          </p>
+          <Condition src={image1} text={"3 часа съемки"} />
+          <Condition src={image2} text={"Более 50 фотографий"} />
+          <Condition src={image3} text={"Москва"} />
+          <Condition src={image4} text={"Готовы ответить на любые вопросы"} />
           <img src={image} alt="" className={s.image} />
-          <RatingBlock/>
+          <RatingBlock />
         </div>
       </div>
     </section>

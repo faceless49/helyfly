@@ -3,9 +3,12 @@
 
 .title {
   margin: 0 auto;
-  @include text(28, 400, 34);
+  @include text(26, 400, 32);
   text-align: center;
   @media (min-width: $mq3+px) {
     @include text(40, 500, 49);
+  }
+  @media (min-width:$mq2+px){
+    max-width: 337px;
   }
 }

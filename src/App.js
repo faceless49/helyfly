@@ -17,7 +17,6 @@ function App() {
       <Gallery/>
       <Hero/>
       <TimeTable/>
-     <DatePick/>
     </div>
     </BrowserRouter>
   );
