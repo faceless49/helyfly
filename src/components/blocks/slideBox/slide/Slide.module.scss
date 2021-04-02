@@ -1,0 +1,31 @@
+@import "./../../../../sass/mixins";
+@import "./../../../../sass/vars";
+
+.wrapperSlide {
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include text(30, 700, 44);
+    text-align: center;
+    color: #ffffff;
+    background-color: $secondColor;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    margin: 0 auto;
+  }
+  .descrWrap {
+    color: $textColor;
+    .subtitle {
+      @include text(16, 500, 23);
+      text-align: center;
+      margin: 10px 0;
+    }
+    .text {
+      display: block;
+      @include text(14, 400, 20);
+      text-align: center;
+    }
+  }
+}

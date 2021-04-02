@@ -6,7 +6,8 @@ import { Main } from './components/blocks/main/Main';
 import { Photoset } from './components/blocks/photoset/Photoset';
 import { Hero } from './components/blocks/hero/Hero';
 import { TimeTable } from './components/blocks/timeTable/TimeTable';
-import  {DatePick}  from './components/datePick/DatePick';
+import { MapBlock } from './components/blocks/map/MapBlock';
+import { SlideBox } from './components/blocks/slideBox/SlideBox';
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,8 @@ function App() {
       <Gallery/>
       <Hero/>
       <TimeTable/>
+      <MapBlock/>
+      <SlideBox/>
     </div>
     </BrowserRouter>
   );

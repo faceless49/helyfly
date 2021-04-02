@@ -39,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-yandex-maps": "^4.6.0",
+    "swiper": "^6.5.3"
   }
 }

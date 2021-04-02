@@ -1,0 +1,10 @@
+@import "./../../../sass/vars";
+
+.mapBlock {
+  width: 100%;
+  height: 423px;
+  @media (min-width:$mq4+px){
+     height: 509px; 
+  }
+}
+

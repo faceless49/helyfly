@@ -6,12 +6,13 @@ export const TimeTable = (props) => {
   return (
     <section className={s.time}>
       <div className={s.container}>
-  <h2 className={s.title}>Доступная съемка 
-в ближайшее время:</h2>
+        <h2 className={s.title}>Доступная съемка в ближайшее время:</h2>
         <div className={s.inner}>
           <div className={s.date}>
-            <time datetime="2021-09-14" className={s.datePick}>{props.date}Пятница, 14 сентября</time>
-            <DatePick/>
+            <time datetime="2021-09-14" className={s.datePick}>
+              {props.date}Пятница, 14 сентября
+            </time>
+            <DatePick />
           </div>
 
           <div class={s.blockRow}>

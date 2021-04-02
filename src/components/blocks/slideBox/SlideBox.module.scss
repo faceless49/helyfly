@@ -1,0 +1,16 @@
+@import "./../../../sass/mixins";
+@import "./../../../sass/vars";
+
+.slideBox {
+  .container {
+    @extend %container;
+    .slideBoxWrapper {
+      padding: 52px 0px 20px 0px;
+      border: 1px solid #c7c7c7;
+    }
+  }
+}
+.heroAvatar {
+  display: flex;
+  justify-content: center;
+}
