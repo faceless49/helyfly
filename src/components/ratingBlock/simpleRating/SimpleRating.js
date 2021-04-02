@@ -2,7 +2,6 @@ import React from 'react';
 import Rating from '@material-ui/lab/Rating';
 import Box from '@material-ui/core/Box';
 import { styled } from "@material-ui/core/styles";
-import s from './SimpleRating.module.scss';
 
 
 export const SimpleRating = (props) => {
