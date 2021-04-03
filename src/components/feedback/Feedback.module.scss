@@ -1,0 +1,75 @@
+@import "./../../sass/vars";
+@import "./../../sass/mixins";
+
+.feedback {
+  padding-bottom: 44px;
+  margin-bottom: 30px;
+  border-bottom: 0.5px solid #C7C7C7;
+
+  .column {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0px 0px 14px 0px;
+    @media (min-width:$mq3+px){
+       flex-direction: row; 
+       align-items: flex-end;
+    }
+
+    .feedHeader {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin: 0px 0px 24px 0px;
+      @media (min-width:$mq3+px){
+         margin: 0; 
+      }
+      .imgWrap {
+        width: 84px;
+        height: 84px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        background-size: cover;
+      }
+      .wrapper {
+        margin: 0px 0px 0px 18px;
+        .name {
+          @include text(16, 500, 20) margin: 0px 0px 6px 0px;
+        }
+        .proffession {
+      @include text(14, 400, 21);
+          margin: 0px 0px 7px 0px;
+          display: block;
+        }
+      }
+    }
+    .minFeed {
+      @include text(14, 400, 21);
+      color: $textLightColor;
+      position: relative;
+      padding: 0px 0px 0px 20px;
+      &:before {
+        content: "";
+        width: 15px;
+        height: 11.5px;
+        left: 0%;
+        top: 10%;
+        position: absolute;
+        background: url("./../../assets/icons/checked.svg") center center/cover
+          no-repeat;
+      }
+    }
+  }
+  .bigFeed {
+    margin-bottom: 17px;
+    @include text(14,400,21);
+
+  }
+  .date {
+    @include text(14,400,21);
+    color: $textLightColor;
+
+  }
+}

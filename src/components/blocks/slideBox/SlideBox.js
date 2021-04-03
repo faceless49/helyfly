@@ -1,4 +1,4 @@
-import s from "./SlideBox.module.scss";
+import "./SlideBox.scss";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,9 +13,9 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export const SlideBox = (props) => {
   return (
-    <div className={s.slideBox}>
-      <div className={s.container}>
-        <div className={s.slideBoxWrapper}>
+    <div className="slideBox">
+      <div className="container">
+        <div className="slideBoxWrapper">
           <Swiper
             slidesPerView={1}
             navigation
@@ -43,7 +43,7 @@ export const SlideBox = (props) => {
               />
             </SwiperSlide>
           </Swiper>
-          <Profile class={s.heroAvatar} proffession="Фотограф" style={{width: "67px", height: "67px", textAlign: "left"}} />
+          <Profile class="heroAvatar" proffession="Фотограф" style={{width: "67px", height: "67px", textAlign: "left"}} />
         </div>
       </div>
     </div>

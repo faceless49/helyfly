@@ -1,0 +1,64 @@
+@import "./../../../sass/vars";
+@import "./../../../sass/mixins";
+
+.footer {
+  margin: 80px 0px 0px 0px;
+  padding-bottom: 20px;
+  .container {
+    @extend %container;
+    .footerTop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a + a {
+        margin-left: 30px;
+      }
+      .social {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .footerBottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 26px;
+      .payment {
+          display: flex;
+          align-items:center;
+        a + a {
+          margin-left: 17px;
+        }
+      }
+      .information {
+        margin: 0 auto;
+        @include text(14, 400, 17);
+        color: $textLightColor;
+        margin-top: 24px;
+        text-align: center;
+        @media (min-width:$mq4+px){
+           margin: 0;
+       }
+        span {
+          display: block;
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        
+      }
+      .language {
+        display: block;
+        padding-right: 10px;
+        @include text(15, 400, 18);
+        background: url(./../../../assets/icons/select.svg) 100% 50% no-repeat;
+        appearance: none;
+        @media (min-width:$mq4+px){
+             order: 3; 
+        }
+      }
+    }
+  }
+}

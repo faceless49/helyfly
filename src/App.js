@@ -8,6 +8,8 @@ import { Hero } from './components/blocks/hero/Hero';
 import { TimeTable } from './components/blocks/timeTable/TimeTable';
 import { MapBlock } from './components/blocks/map/MapBlock';
 import { SlideBox } from './components/blocks/slideBox/SlideBox';
+import { FeedbackBlock } from './components/blocks/feedbackBlock/FeedbackBlock';
+import { Footer } from './components/blocks/footer/Footer';
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +22,8 @@ function App() {
       <TimeTable/>
       <MapBlock/>
       <SlideBox/>
+      <FeedbackBlock/>
+      <Footer/>
     </div>
     </BrowserRouter>
   );

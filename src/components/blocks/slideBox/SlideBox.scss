@@ -1,0 +1,54 @@
+@import "./../../../sass/mixins";
+@import "./../../../sass/vars";
+
+.slideBox {
+  @media (min-width: $mq2+px) {
+    display: none;
+  }
+  .container {
+    @extend %container;
+    .slideBoxWrapper {
+      padding: 52px 0px 20px 0px;
+      border: 1px solid #c7c7c7;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+}
+.heroAvatar {
+  display: flex;
+  justify-content: center;
+}
+.slideBox .swiper-container .swiper-button-prev {
+  --swiper-navigation-size: 20px;
+  color: #c7c7c7;
+  top: 35px;
+  left: 15px;
+}
+
+.slideBox .swiper-container .swiper-button-next {
+  --swiper-navigation-size: 20px;
+  color: #c7c7c7;
+  top: 35px;
+  right: 15px;
+}
+
+.slideBox {
+  margin-bottom: 20px;
+}
+.slideBox .swiper-container .swiper-wrapper {
+  margin: 0 auto;
+}
+.slideBox .swiper-container {
+  overflow-y: visible;
+  height: 180px;
+}
+.slideBox .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  background-color: $secondColor;
+}
+
+.slideBox .swiper-container .swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
