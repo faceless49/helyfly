@@ -6,11 +6,11 @@ export const TimeTable = (props) => {
   return (
     <section className={s.time}>
       <div className={s.container}>
-        <h2 className={s.title}>Доступная съемка в ближайшее время:</h2>
+        <h2 className={s.title}>{props.title}Доступная съемка<br/> в ближайшее время:</h2>
         <div className={s.inner}>
           <div className={s.date}>
-            <time datetime="2021-09-14" className={s.datePick}>
-              {props.date}Пятница, 14 сентября
+            <time dateTime="2021-09-14" className={s.datePick}>
+              {props.date}Пятница, <span>14 </span>сентября
             </time>
             <DatePick />
           </div>
@@ -19,7 +19,7 @@ export const TimeTable = (props) => {
             <div class={s.blockColumn}>
               <div className={s.spWrap}>
                 <span>
-                  <time datetime="15:00 - 18:00">15:00 - 18:00</time>
+                  <time dateTime="15:00 - 18:00">15:00 - 18:00</time>
                 </span>
                 <span className={s.price}>850$</span>
                 <span className={s.place}>Осталось — 1 место</span>
@@ -33,7 +33,7 @@ export const TimeTable = (props) => {
             <div class={s.blockColumn}>
               <div className={s.spWrap}>
                 <span>
-                  <time datetime="19:00 - 22:00">19:00 - 22:00</time>
+                  <time dateTime="19:00 - 22:00">19:00 - 22:00</time>
                 </span>
                 <span className={s.price}>850$</span>
                 <span className={s.place}>Осталось — 1 место</span>

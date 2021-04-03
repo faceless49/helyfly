@@ -12,7 +12,7 @@ export const Photoset = (props) => {
     <section className={s.photoset}>
       <div className={s.container}>
         <div className={s.inner}>
-          <h2 className={s.title}>Фотосессия в вертолете</h2>
+          <h2 className={s.title}>Фотосессия <br/>в вертолете</h2>
           <p className={s.text}>
             Полет на вертолете это прекрасная возможность получить новые
             ощущения! А наш замечательный фотограф запечатлит лучшие моменты!

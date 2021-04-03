@@ -4,23 +4,28 @@
 .feedBack {
   .container {
     @extend %container;
-    @media (min-width:$mq2+px){
-       margin: 0;
-       max-width: 685px; 
+    @media (min-width: $mq2+px) {
+      margin: 0;
+      max-width: 685px;
     }
     .title {
       @include text(26, 400, 39);
       color: $textColor;
       text-align: center;
       margin: 0px 0px 50px 0px;
-      @media (min-width:$mq3+px){
-         text-align: left; 
+      @media (min-width: $mq3+px) {
+        text-align: left;
+        @include text(20, 500, 29);
+      }
+      @media (min-width:$mq2+px){
+        @include text(28, 500, 40);
+          
       }
     }
     .thirdfeed {
       display: none;
-      @media (min-width:$mq4+px){
-         display: block; 
+      @media (min-width: $mq4+px) {
+        display: block;
       }
     }
   }
@@ -28,26 +33,26 @@
     display: block;
     text-align: center;
     color: $linkColor;
-      span {
-        position: relative;
-        &:after {
-          content: "";
-          top: 40%;
-          right: -20px;
-          background-image: url(../../../assets/icons/arrow.svg);
-          width: 11px;
-          height: 6px;
-          position: absolute;
-        }
-        &:before {
-          content: "";
-          top: 40%;
-          left: -20px;
-          width: 11px;
-          height: 6px;
-          background-image: url(../../../assets/icons/arrow.svg);
-          position: absolute;
-        }
+    span {
+      position: relative;
+      &:after {
+        content: "";
+        top: 40%;
+        right: -20px;
+        background-image: url(../../../assets/icons/arrow.svg);
+        width: 11px;
+        height: 6px;
+        position: absolute;
+      }
+      &:before {
+        content: "";
+        top: 40%;
+        left: -20px;
+        width: 11px;
+        height: 6px;
+        background-image: url(../../../assets/icons/arrow.svg);
+        position: absolute;
       }
     }
   }
+}

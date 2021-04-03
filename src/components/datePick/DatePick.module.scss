@@ -1,5 +1,15 @@
+@import "./../../sass/vars";
+@import "./../../sass/mixins";
+
+.datePickerWrap {
+  display: none;
+  @media (min-width: $mq4+px) {
+    display: inline-block;
+  }
+}
+
 .btn {
-    background: #fff;
-    width: 35px;
-    height: 35px;
+  background: #fff;
+  width: 35px;
+  height: 35px;
 }

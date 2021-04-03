@@ -34,12 +34,14 @@ export const DatePick = () => {
     </button>
   ));
   return (
-    <DatePicker
-    width={35}
-    height={35}
-      selected={startDate}
-      onChange={(date) => setStartDate(date)}
-      customInput={<ExampleCustomInput />}
-    />
+<div className={s.datePickerWrap}>
+      <DatePicker
+      width={35}
+      height={35}
+        selected={startDate}
+        onChange={(date) => setStartDate(date)}
+        customInput={<ExampleCustomInput />}
+      />
+</div>
   );
 };

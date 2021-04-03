@@ -43,7 +43,7 @@ export const SlideBox = (props) => {
               />
             </SwiperSlide>
           </Swiper>
-          <Profile class="heroAvatar" proffession="Фотограф" style={{width: "67px", height: "67px", textAlign: "left"}} />
+          <Profile class="heroAvatar" proffession="Фотограф" style={{width: "67px", height: "67px"}} styledText={{textAlign:"left", marginLeft:"10px"}} linkstyle={{textAlign:"left"}}/>
         </div>
       </div>
     </div>

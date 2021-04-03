@@ -2,13 +2,17 @@
 @import "./../../../sass/mixins";
 
 .time {
-    @media (min-width:$mq2+px){
-         max-width: 770px; 
-    }
+  @media (min-width: $mq2+px) {
+    max-width: 770px;
+  }
   .container {
     @extend %container;
-
+    .title {
+      @include text(26, 400, 31);
+      text-align: center;
+    }
     .inner {
+      margin: 41px 0px 0px 0px;
       display: grid;
       .blockRow {
         .blockColumn {
@@ -42,18 +46,20 @@
         }
       }
       .date {
-        padding: 20px 44px 16px 44px;
         @include text(18, 400, 26);
         color: $textColor;
         box-sizing: border-box;
         display: flex;
         align-items: center;
         justify-content: center;
-        @media (min-width:$mq2+px){
-             justify-content: flex-start; 
+        @media (min-width: $mq2+px) {
+          justify-content: flex-start;
         }
         .datePick {
-            margin: 0px 14px 0px 0px;
+          margin: 0px 14px 0px 0px;
+          span {
+            @include text(18, 500, 26);
+          }
         }
       }
     }
