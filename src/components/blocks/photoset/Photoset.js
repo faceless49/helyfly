@@ -12,17 +12,22 @@ export const Photoset = (props) => {
     <section className={s.photoset}>
       <div className={s.container}>
         <div className={s.inner}>
-          <h2 className={s.title}>Фотосессия <br/>в вертолете</h2>
-          <p className={s.text}>
-            Полет на вертолете это прекрасная возможность получить новые
-            ощущения! А наш замечательный фотограф запечатлит лучшие моменты!
-          </p>
-          <Condition src={image1} text={"3 часа съемки"} />
-          <Condition src={image2} text={"Более 50 фотографий"} />
-          <Condition src={image3} text={"Москва"} />
-          <Condition src={image4} text={"Готовы ответить на любые вопросы"} />
+          <h2 className={s.title}>
+            Фотосессия <br />в вертолете
+          </h2>
+          <div className={s.plusesWrap}>
+            <p className={s.text}>
+              Полет на вертолете это прекрасная возможность получить новые
+              ощущения! А наш замечательный фотограф запечатлит лучшие моменты!
+            </p>
+
+            <Condition src={image1} text={"3 часа съемки"} />
+            <Condition src={image2} text={"Более 50 фотографий"} />
+            <Condition src={image3} text={"Москва"} />
+            <Condition src={image4} text={"Готовы ответить на любые вопросы"} />
+            <RatingBlock style={{paddingLeft: "20px"}}/>
+          </div>
           <img src={image} alt="" className={s.image} />
-          <RatingBlock />
         </div>
       </div>
     </section>

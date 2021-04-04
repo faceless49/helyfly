@@ -10,6 +10,11 @@
     @media (min-width:$mq4+px){
          padding: 20px 0 29px 0; 
     }
+    @media (min-width:$mq3+px){
+    border-top: none;
+    padding: 15px 0 20px 0; 
+
+    }
     .ratingWrap {
         margin: 0px 0px 0px 14px;
     }

@@ -26,6 +26,11 @@
       .heroInfo {
         @include text(16, 400, 24);
         margin: 14px 0px 30px 0px;
+        @media (min-width:$mq3+px){
+            &:nth-child(3) {
+              margin-bottom: 20px;
+            }
+        }
       }
       .blockRow {
         order: 2;

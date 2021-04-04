@@ -3,27 +3,46 @@
 
 .gallery {
   padding: 60px 0px 30px 15px;
-  @media (min-width:$mq3+px){
-    border-bottom: 0.5px solid #C7C7C7;
+  @media (min-width: $mq3+px) {
+    border-bottom: 0.5px solid #c7c7c7;
+  }
+  @media (min-width: $mq4+px) {
+    padding-bottom: 45px;
   }
   .inner {
+    .title {
+      @include text(26, 400, 32);
+      max-width: 175px;
+      text-align: center;
+      margin: 0 auto;
+      @media (min-width: $mq3+px) {
+        max-width: none;
+        text-align: left;
+        margin: 0;
+        @include text(20, 500, 29);
+      }
+    }
     .content {
       display: grid;
       grid-template-columns: repeat(8, 277px);
       grid-gap: 12px;
       grid-template-rows: 185px;
       overflow: scroll;
+      margin: 40px 0px 0px 0px;
       @media (min-width: $mq3+px) {
         overflow: visible;
         padding: 0px 100px 0px 100px;
         grid-template-columns: repeat(2, 277px);
         grid-template-rows: repeat(4, 185px);
+        justify-content: center;
       }
-      @media (min-width:$mq2+px){
+      @media (min-width: 770px) {
+        margin: 20px 0px 0px 0px;
+      }
+      @media (min-width: $mq2+px) {
         padding: 0 70px;
         grid-template-columns: repeat(4, 277px);
         grid-template-rows: repeat(2, 185px);
-          
       }
       .imgWrap {
         img {

@@ -5,12 +5,16 @@
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  @media (min-width:769px){
+    margin-bottom: 10px;
+    }
   &:nth-child(6){
     margin-bottom: 38px;
   }
   .conditionIcon {
     width: 35px;
     margin: 0px 10px 0px 0px;
+   
   }
   .conditionItem {
     @include text(14, 500, 20);

@@ -5,7 +5,7 @@ import { HeroName } from "../heroName/HeroName";
 export const Profile = (props) => {
   return (
     <div className={`${s.profile} ${props.class}`}>
-      <div className={s.avatarWrap} style={props.style}></div>
+      <div className={s.avatarWrap} style={props.style}><span style={props.likeStyle} className={s.like}></span></div>
       <div className={s.columnWrap} style={props.styledText}>
         <HeroName profileName="Марина Иванова" />
 

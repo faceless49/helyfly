@@ -5,9 +5,12 @@
   @media (min-width: $mq2+px) {
     padding: 0;
   }
+  @media (min-width:$mq4+px){
+     padding: 47px 0 0 0; 
+  }
   .columnWrap {
     text-align: center;
-    &:last-child{
+    &:last-child {
       margin: 0;
     }
     .moreLink {
@@ -33,5 +36,14 @@
     border-radius: 50%;
     background-size: cover;
     margin-bottom: 23px;
+    position: relative;
+    .like {
+      width: 31px;
+      height: 27px;
+      position: absolute;
+      top: -10%;
+      right: -50%;
+      background: url("./../../assets/icons/like.svg") no-repeat center/cover;
+    }
   }
 }

@@ -28,4 +28,7 @@ $mq4: 575.98;
          width: 100%;
          margin: 0 auto;
     }
+    @media (min-width:$mq1+px){
+          padding: 0 150px; 
+    }
 }

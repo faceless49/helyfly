@@ -10,10 +10,14 @@
     .title {
       @include text(26, 400, 31);
       text-align: center;
+      @media (min-width:$mq3+px){
+         text-align: left; 
+      }
     }
     .inner {
       margin: 41px 0px 0px 0px;
       display: grid;
+      border: 1px solid #C7C7C7;
       .blockRow {
         .blockColumn {
           padding: 30px 20px;
@@ -22,6 +26,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+          }
+          @media (min-width:$mq3+px){
+             border-top: 0.5px solid #C7C7C7; 
           }
           .spWrap {
             display: flex;
@@ -54,6 +61,10 @@
         justify-content: center;
         @media (min-width: $mq2+px) {
           justify-content: flex-start;
+        }
+        @media (min-width:$mq3+px){
+           justify-content: flex-start; 
+           padding: 0 20px;
         }
         .datePick {
           margin: 0px 14px 0px 0px;
