@@ -9,10 +9,10 @@
       display: grid;
       grid-template-columns: 1fr;
       @media (min-width: 769px) {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 100px 375px;
-
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px auto;
       }
+
       .title {
         @include text(28, 400, 34);
         text-align: center;
@@ -24,16 +24,29 @@
           text-align: left;
         }
       }
-      .image {
+      .imgWrap {
         grid-area: 2/1/3/2;
-        border-radius: 4px;
-        width: 100%;
-        @media (min-width:769px){
-            grid-area: 1/2;
-            width: 430px;
-            margin: 0px 0px 0px 40px;
+        @media (min-width: 800px) {
+          grid-area: 1/2/3/3;
+          width: 555px;
+          position: relative;
+          justify-self:end;
+        }
+        .image {
+          grid-area: 2/1/3/2;
+          border-radius: 4px;
+          width: 100%;
+          @media (min-width: 800px) {
+            grid-area: 1/2/3/3;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
         }
       }
+
       .text {
         @include text(14, 400, 20);
         text-align: left;
@@ -41,11 +54,11 @@
         @media (min-width: $mq4+px) {
           @include text(18, 400, 26);
         }
-        @media (min-width:$mq3+px){
-        padding-top: 46px;
+        @media (min-width: $mq3+px) {
+          padding-top: 46px;
         }
-        @media (min-width:$mq2+px){
-           padding-top: 18px; 
+        @media (min-width: $mq2+px) {
+          padding-top: 18px;
         }
       }
       .list {

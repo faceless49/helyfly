@@ -21,6 +21,9 @@ export const MapBlock = (props) => {
           />
         </Map>
       </YMaps>
+      <div className={s.popup}>
+        
+      </div>
     </section>
   );
 };

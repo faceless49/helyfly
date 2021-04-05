@@ -25,9 +25,9 @@ export const Photoset = (props) => {
             <Condition src={image2} text={"Более 50 фотографий"} />
             <Condition src={image3} text={"Москва"} />
             <Condition src={image4} text={"Готовы ответить на любые вопросы"} />
-            <RatingBlock style={{paddingLeft: "20px"}}/>
+            <RatingBlock />
           </div>
-          <img src={image} alt="" className={s.image} />
+          <div className={s.imgWrap}><img src={image} alt="" className={s.image} /></div>
         </div>
       </div>
     </section>

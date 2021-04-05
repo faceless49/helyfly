@@ -25,6 +25,7 @@ export const FeedbackBlock = (props) => {
   return (
     <section className={s.feedBack}>
       <div className={s.container}>
+        <div className={s.inner}>
         <h2 className={s.title}>{props.title}Отзывы</h2>
         <Feedback
         style={feedBack.feedAvatar1}
@@ -52,6 +53,7 @@ export const FeedbackBlock = (props) => {
 с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!"
             date="11 Апреля, 2019г."
           />
+        </div>
         </div>
       </div>
       <NavLink to="/1" className={s.moreLink}><span>Показать Все (134)</span></NavLink>

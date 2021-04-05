@@ -5,6 +5,10 @@
   padding-bottom: 44px;
   margin-bottom: 30px;
   border-bottom: 0.5px solid #C7C7C7;
+  @media (min-width:$mq2+px){
+    max-width: 655px;
+      
+  }
 
   .column {
     display: flex;

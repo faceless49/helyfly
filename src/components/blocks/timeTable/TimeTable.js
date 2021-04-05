@@ -6,7 +6,10 @@ export const TimeTable = (props) => {
   return (
     <section className={s.time}>
       <div className={s.container}>
-        <h2 className={s.title}>{props.title}Доступная съемка<br/> в ближайшее время:</h2>
+        <h2 className={s.title}>
+          {props.title}Доступная съемка
+          <br /> в ближайшее время:
+        </h2>
         <div className={s.inner}>
           <div className={s.date}>
             <time dateTime="2021-09-14" className={s.datePick}>
@@ -25,7 +28,9 @@ export const TimeTable = (props) => {
                 <span className={s.place}>Осталось — 1 место</span>
               </div>
 
-              <button className={s.btn}>Выбрать</button>
+              <button className={s.btn}>
+                <span> Выбрать</span>
+              </button>
             </div>
           </div>
 
@@ -39,7 +44,7 @@ export const TimeTable = (props) => {
                 <span className={s.place}>Осталось — 1 место</span>
               </div>
 
-              <button className={s.btn}>Выбрать</button>
+              <button className={s.btn}> <span> Выбрать</span></button>
             </div>
           </div>
           <RatingBlock />

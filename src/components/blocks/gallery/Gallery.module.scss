@@ -9,78 +9,88 @@
   @media (min-width: $mq4+px) {
     padding-bottom: 45px;
   }
-  .inner {
-    .title {
-      @include text(26, 400, 32);
-      max-width: 175px;
-      text-align: center;
-      margin: 0 auto;
-      @media (min-width: $mq3+px) {
-        max-width: none;
-        text-align: left;
-        margin: 0;
+  .container {
+    @extend %container;
+    
+    .inner {
+      @media (min-width: $mq1+px) {
+        max-width: 1140px;
+        margin: 0 auto;
         @include text(20, 500, 29);
+        color: $textColor;
       }
-    }
-    .content {
-      display: grid;
-      grid-template-columns: repeat(8, 277px);
-      grid-gap: 12px;
-      grid-template-rows: 185px;
-      overflow: scroll;
-      margin: 40px 0px 0px 0px;
-      @media (min-width: $mq3+px) {
-        overflow: visible;
-        padding: 0px 100px 0px 100px;
-        grid-template-columns: repeat(2, 277px);
-        grid-template-rows: repeat(4, 185px);
-        justify-content: center;
-      }
-      @media (min-width: 770px) {
-        margin: 20px 0px 0px 0px;
-      }
-      @media (min-width: $mq2+px) {
-        padding: 0 70px;
-        grid-template-columns: repeat(4, 277px);
-        grid-template-rows: repeat(2, 185px);
-      }
-      .imgWrap {
-        img {
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-          border-radius: 4px;
+      .title {
+        @include text(26, 400, 32);
+        max-width: 175px;
+        text-align: center;
+        margin: 0 auto;
+        @media (min-width: $mq3+px) {
+          max-width: none;
+          text-align: left;
+          margin: 0;
+          @include text(20, 500, 29);
         }
       }
-    }
-    .moreLink {
-      text-align: center;
-      margin: 40px 0px 0px 0px;
-      color: $linkColor;
-      @include text(17, 500, 25);
-      display: none;
-      @media (min-width: $mq3+px) {
-        display: block;
-      }
-      span {
-        position: relative;
-        &:after {
-          content: "";
-          top: 40%;
-          right: -20px;
-          background-image: url(../../../assets/icons/arrow.svg);
-          width: 11px;
-          height: 6px;
-          position: absolute;
+      .content {
+        display: grid;
+        grid-template-columns: repeat(8, 277px);
+        grid-gap: 12px;
+        grid-template-rows: 185px;
+        overflow-x: auto;
+        margin: 40px 0px 0px 0px;
+        @media (min-width: $mq3+px) {
+          overflow: visible;
+          padding: 0px 100px 0px 100px;
+          grid-template-columns: repeat(2, 277px);
+          grid-template-rows: repeat(4, 185px);
+          justify-content: center;
         }
-        &:before {
-          content: "";
-          top: 40%;
-          left: -20px;
-          width: 11px;
-          height: 6px;
-          background-image: url(../../../assets/icons/arrow.svg);
-          position: absolute;
+        @media (min-width: 770px) {
+          margin: 20px 0px 0px 0px;
+        }
+        @media (min-width: $mq2+px) {
+          padding: 0 70px;
+          grid-template-columns: repeat(4, 277px);
+          grid-template-rows: repeat(2, 185px);
+        }
+        .imgWrap {
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 4px;
+          }
+        }
+      }
+      .moreLink {
+        text-align: center;
+        margin: 40px 0px 0px 0px;
+        color: $linkColor;
+        @include text(17, 500, 25);
+        display: none;
+        @media (min-width: $mq3+px) {
+          display: block;
+        }
+        span {
+          position: relative;
+          &:after {
+            content: "";
+            top: 40%;
+            right: -20px;
+            background-image: url(../../../assets/icons/arrow.svg);
+            width: 11px;
+            height: 6px;
+            position: absolute;
+          }
+          &:before {
+            content: "";
+            top: 40%;
+            left: -20px;
+            width: 11px;
+            height: 6px;
+            background-image: url(../../../assets/icons/arrow.svg);
+            position: absolute;
+          }
         }
       }
     }
